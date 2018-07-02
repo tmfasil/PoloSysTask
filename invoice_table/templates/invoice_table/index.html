@@ -1,14 +1,48 @@
+    <style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
                         <table>
-							<thead>
-								<tr class="row100 head">
-									<th class="cell100 column1">Employees</th>
+
+								<tr >
+									<th>#</th>
+                                    <th>Product/SE</th>
+                                    <th>HSN/SAC</th>
+                                    <th>Description</th>
+                                    <th>Qty</th>
+                                    <th>Rate</th>
+                                    <th>Amount</th>
+                                    <th>GST</th>
 								</tr>
-							</thead>
-							<tbody>
-								<tr class="row100 body">
-									<td class="cell100 column1">Brandon Green</td>
+                                <tr >
+									<td>1</td>
+                                    <td><select>
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="opel">Opel</option>
+                                        <option value="audi">Audi</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="text" name="HSN/SAC"></td>
+                                    <td><input type="text" name="Description"></td>
+                                    <td><input type="text" name="Qty"></td>
+                                    <td><input type="text" name="Rate"></td>
+                                    <td><input type="text" name="Amount"></td>
+                                    <td><input type="text" name="GST"></td>
 								</tr>
 
-								</tr>
-							</tbody>
+
 						</table>
