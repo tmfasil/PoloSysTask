@@ -41,21 +41,25 @@ td, th {
                                         <option value="prod4">Product 4</option>
                                         </select>
                                     </td>
-                                    <td><input onclick="myFunction(this)" type="text" name="HSN/SAC"></td>
-                                    <td><input onclick="myFunction(this)" type="text" name="Description"></td>
-                                    <td><input onclick="myFunction(this)" type="number" name="Qty"></td>
-                                    <td><input onclick="myFunction(this)" type="number" name="Rate"></td>
-                                    <td><input onclick="myFunction(this)" type="number" name="Amount"></td>
+                                    <td><input type="text" name="HSN/SAC"></td>
+                                    <td><input type="text" name="Description"></td>
+                                    <td><input type="number" name="Qty"></td>
+                                    <td><input type="number" name="Rate"></td>
+                                    <td><input type="number" name="Amount"></td>
                                     <td><input type="number" name="GST"></td>
                                     <td><input type="button" value="Del" onclick="deleteRow('table1', 1)"></td>
 								</tr>
+                                <tr onclick="addRow('table1',this)">
+                                    <td><input type="button" value="add" ></td>
+                                </tr>
 						</table>
 
     <script>
         function deleteRow(id,x){
             document.getElementById(id).deleteRow(x);
         }
-        function myFunc(x){
-
+        function addRow(id,x){
+                    var row = document.getElementById(id).insertRow(x.rowIndex);
+                    row.insertCell(0).innerHTML="eeee";
         }
     </script>
